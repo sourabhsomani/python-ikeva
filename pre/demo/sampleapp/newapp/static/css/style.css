@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+table tr th{
+    background-color: #cccccc;
+    padding: 5px 10px;
+    border: 0px;
+}
+table tr td{
+     border: 0px;
+}
+div.form{
+    margin:20px;
+}
+input{
+    padding: 5px 10px;
+    width: 300px;
+}
+input[type=submit]{
+    width: 100px;
+}

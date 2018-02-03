@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block head %}
+<title>Register a Student</title>
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            <label for="StudentName">Name</label><br><input type="text" id="StudentName" name="StudentName"><br><br>
+            <label for="StudentEmail">Email</label><br><input type="email" id="StudentEmail" name="StudentEmail"><br><br>
+            <label for="StudentContactNumber">Contact Number</label><br><input type="text" id="StudentContactNumber" name="StudentContactNumber"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+{% endblock %}

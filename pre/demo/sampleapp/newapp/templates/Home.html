@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block head %}
+<title>Hello</title>
+{% endblock %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+    </tr>
+    {% for s in Students %}
+        <tr>
+            <td>{{ s.name }}</td>
+            <td>{{ s.email }}</td>
+            <td>{{ s.Contact_Number }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
